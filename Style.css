@@ -85,4 +85,12 @@ button:hover {
         grid-template-columns: repeat(3, 1fr);
         max-width: 900px;
     }
+
+    .car {
+        gap: 3rem
+    }
+
+    button {
+        margin-top: 4rem
+    }
 }
