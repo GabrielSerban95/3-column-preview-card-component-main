@@ -76,6 +76,7 @@ button:hover {
     border: 2px solid white;
     color: white;
     background-color: transparent;
+    cursor: pointer;
 }
 
 /* Responsive Styles */
