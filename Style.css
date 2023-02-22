@@ -1,0 +1,88 @@
+/* Resets */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* General CSS */
+
+html, body {
+    height: 100%;
+    display: grid;
+    place-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+    max-width: 300px;
+    display: grid;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.car {
+    display: grid;
+    gap: 2rem;
+    padding: 2.3rem;
+    color: hsla(0, 0%, 100%, 0.61);
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cyan-dark {
+    background-color: hsl(179, 100%, 13%);
+}
+
+button {
+    max-width: 62%;
+    border: none;
+    border-radius: 40px;
+    padding: 1rem;
+    mix-blend-mode: screen;
+    font-weight: 700;
+    transition: color linear .2s, background-color linear .2s;
+}
+
+button:hover {
+    padding: .86rem;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+/* Responsive Styles */
+
+@media (min-width: 900px) {
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+    }
+}
